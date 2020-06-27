@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss-casewebpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gopivjn/tailwindcss-casewebpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gopivjn/tailwindcss-casewebpage/issues"
+  },
+  "homepage": "https://github.com/gopivjn/tailwindcss-casewebpage#readme",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}
