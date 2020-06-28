@@ -1,5 +1,11 @@
 @tailwind base;
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 @tailwind components;
 
 @tailwind utilities;

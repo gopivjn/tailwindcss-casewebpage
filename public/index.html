@@ -1,116 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-  <title>tailwindcss-CaseWebpage</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="main-container">
-    <nav id="main-appbar">
-      <div class="container">
-          <h1>Duvista Case Study</h1>
-        <div class="app-icons">
-          <ul>
-            <li><img src="./img/user.png" alt="" class="user"></li>
-            <li><img src="./img/logo.png" alt="" class="logo"></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="page">
-      <div class="nav-card">
-        <div class="namecard card-side">
-          <div>
-          <p id="supertitle">Case Main</p>
-          <p id="title">eCommerce Platform Re-engineering Solutions.</p>
-          <p id="subjects">CLT - Gift Certificates</p>
-          </div>
-          <img src="./img/thumb_banner.jpg" alt="">
-        </div>
-        <div class="navmenu">
-          <div class="nav card-side">
-            <a href="#overview" class="overview">Overview</a>
-          </div>
-          <div class="nav card-side">
-            <a href="#highlights" class="highlights">Highlights</a>
-          </div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="overview-container">
-          <div id="overview" class="card">
-            <p id="supertitle-m">Speciality Online Retailer</p>
-            <p id="title-m">Overhaul of technology systems & processes transforms the business of an online gifting brand.</p>
-            <p id="subjects-m">Retail, eCommerce, Order Processing, MoM and SoA</p>
-          </div>
-            <div>
-            <img src="./img/banner.jpg" class="banner" alt="">
+<html lang="en" class="bg-gray-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>tailwindcss-CaseWebpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mx-auto bg-gray-200">
+      <!-- Nav Bar -->
+      <nav class="bg-white sticky top-0 my-3">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                aria-label="Main menu"
+                aria-expanded="false"
+              >
+                <!-- Icon when menu is closed. -->
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="card">
-            <p class="slab">
-              Order fulfilment on time is crucial for our client, who is into online gifting solutions characterized by seasonal
-              demand spikes. As the systems are becoming unstable and unable to support the business growth and peak demands, Duvista
-              stepped in with an integrated approach that focused on site stabilization and total systems re-architecture using
-              emerging technology solutions. <strong> The result was a sound back-end with scalable & efficient order processing, supporting
-              multiple sales channels and the resultant business growth. Solution Highlights:</strong>
-            </p>
-            </div class="card">
-        </div>
-          <div id="snapshot" class="card">
-              <div class="shead">
-                <span class="sheader">snapshot</span>
+            <div class="flex items-center">
+              <div class="hidden sm:block sm:ml-6">
+                <div>
+                  <span
+                    class="ml-1 px-3 py-2 rounded-md text-xl font-medium leading-5 text-gray-500 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  >
+                    Duvista Case Study
+                  </span>
+                  <a
+                    href="#"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >OVERVIEW
+                  </a>
+                  <a
+                    href="#"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >HIGHLIGHTS
+                  </a>
+                </div>
               </div>
-              <div class="scontentbox">
-                <div class="scontent">
-                  <span class="stitle"> ABOUT THE CLIENT </span>
-                  <p class="ssupertitle">e-Commerce provider of innovative reward solutions and gift products </p>
+            </div>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+              <button
+                class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                aria-label="Notifications"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+              </button>
+              <div class="flex-shrink-0">
+                <img
+                  class="hidden lg:block h-14 w-auto"
+                  src="./img/logo.png"
+                  alt="Workflow logo"
+                />
+              </div>
+
+              <!-- Profile dropdown -->
+              <div class="ml-3 relative">
+                <div>
+                  <button
+                    class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out"
+                    id="user-menu"
+                  >
+                    <img
+                      class="h-8 w-8 rounded-full"
+                      src="img/user.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+    Mobile menu, toggle classes based on menu state.
+
+    Menu open: "block", Menu closed: "hidden"
+  -->
+        <div class="hidden sm:hidden">
+          <div class="px-2 pt-2 pb-3">
+            <a
+              href="#"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >OVERVIEW
+            </a>
+            <a
+              href="#"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >HIGHLIGHTS
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main container -->
+      <div id="main-container" class="flex">
+        <div id="side-bar" class="w-1/4">
+          <div
+            id="casecard"
+            class="bg-blue-700 bg-opacity-25 border rounded flex p-2"
+          >
+            <div>
+              <p id="supertitle">Case Main</p>
+              <p id="title">eCommerce Platform Re-engineering Solutions.</p>
+              <p id="subjects">CLT - Gift Certificates</p>
+            </div>
+            <img
+              src="./img/thumb_banner.jpg"
+              alt=""
+              class="fill-current h-16 w-16 mr-2 mt-2"
+              width="54"
+              height="54"
+              viewBox="0 0 54 54"
+            />
+          </div>
+        </div>
+        <div id="page" class="w-3/4">
+          <div id="top-row" class="flex">
+            <div id="overview" class="w-3/4 bg-white mx-2">
+              <div class="p-4">
+                <p id="supertitle-m">Speciality Online Retailer</p>
+                <p id="title-m">
+                  Overhaul of technology systems & processes transforms the
+                  business of an online gifting brand.
+                </p>
+                <p id="subjects-m">
+                  Retail, eCommerce, Order Processing, MoM and SoA
+                </p>
+              </div>
+              <div>
+                <img src="./img/banner.jpg" alt="" />
+              </div>
+              <div class="p-4">
+                <p>
+                  Order fulfilment on time is crucial for our client, who is
+                  into online gifting solutions characterized by seasonal demand
+                  spikes. As the systems are becoming unstable and unable to
+                  support the business growth and peak demands, Duvista stepped
+                  in with an integrated approach that focused on site
+                  stabilization and total systems re-architecture using emerging
+                  technology solutions.
+                  <strong>
+                    The result was a sound back-end with scalable & efficient
+                    order processing, supporting multiple sales channels and the
+                    resultant business growth. Solution Highlights:</strong
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              id="snapshot"
+              class="w-1/4 h-64 overflow-hidden overflow-scroll bg-white p-4"
+            >
+              <div>
+                <span>SNAPSHOT</span>
+              </div>
+              <div>
+                <div>
+                  <span> ABOUT THE CLIENT </span>
+                  <p>
+                    e-Commerce provider of innovative reward solutions and gift
+                    products
+                  </p>
                   <ul>
-                    <li><span>Channels: B2B, B2C and Retail White-label</span></li>
-                    <li><span>Users: 3 mil retail, 30K corporate, 50+ white-label</span></li>
+                    <li>
+                      <span>Channels: B2B, B2C and Retail White-label</span>
+                    </li>
+                    <li>
+                      <span
+                        >Users: 3 mil retail, 30K corporate, 50+
+                        white-label</span
+                      >
+                    </li>
                     <li><span>Geos: USA, Canada</span></li>
                   </ul>
                 </div>
-                <div class="scontent">
-                  <span class="stitle">KEY CHALLENGES</span>
+                <div>
+                  <span>KEY CHALLENGES</span>
                   <ul>
                     <li><span>Order losses during peak traffic</span></li>
                     <li><span>Inefficient order processing</span></li>
                     <li><span>Offline steps in order processing</span></li>
-                    <li><span>Application design constraints
+                    <li><span>Application design constraints</span></li>
                     <li><span>Skilled team unavailability and ram-up</span></li>
                   </ul>
                 </div>
-                <div class="scontent">
-                  <span class="stitle"> SERVICES</span>
-                  <p class="slist"> Technology consulting<span> • </span>Application Re-engineering<span> • </span>New architecture
-                    & features implementation
-                    <span> • </span>Database migration & optimization<span> • </span>Site stabilization and support<span> •
-                    </span>Test automation </p>
+                <div>
+                  <span> SERVICES</span>
+                  <p>
+                    Technology consulting<span> • </span>Application
+                    Re-engineering<span> • </span>New architecture & features
+                    implementation <span> • </span>Database migration &
+                    optimization<span> • </span>Site stabilization and
+                    support<span> • </span>Test automation
+                  </p>
                 </div>
-                <div class="scontent">
-                  <span class="stitle">TECHNOLOGIES</span>
-                  <oL>
-                    <li><span>Design: Message Oriented Middleware (MoM), Service Oriented Architecture (SOA)</span></li>
-                    <li><span>Programming: Message Queues, Java, J2EE, JMS, JBOSS</span></li>
-                    <li><span>DB, OS: MySQL, SQL Server, Windows, Linux</span></li>
+                <div>
+                  <span>TECHNOLOGIES</span>
+                  <ol>
+                    <li>
+                      <span
+                        >Design: Message Oriented Middleware (MoM), Service
+                        Oriented Architecture (SOA)</span
+                      >
+                    </li>
+                    <li>
+                      <span
+                        >Programming: Message Queues, Java, J2EE, JMS,
+                        JBOSS</span
+                      >
+                    </li>
+                    <li>
+                      <span>DB, OS: MySQL, SQL Server, Windows, Linux</span>
+                    </li>
                     <li><span>UI: Web UI, ASP.NET</span></li>
-                    <li><span>Integration: Web Services, REST API, EDI, XML, JBOSS MQ, MSMQ</span></li>
+                    <li>
+                      <span
+                        >Integration: Web Services, REST API, EDI, XML, JBOSS
+                        MQ, MSMQ</span
+                      >
+                    </li>
                     <li><span>Testing: ITKO LISA, QTP, LoadRunner</span></li>
-                  </oL>
+                  </ol>
                 </div>
-                <div class="scontent">
-                  <span class="stitle">EXECUTION LOCATIONS</span>
+                <div>
+                  <span>EXECUTION LOCATIONS</span>
                   <ul>
                     <li><span>Bangalore, India</span></li>
                     <li><span>Omaha, NE, USA</span></li>
                     <li><span>New York City, NY, USA</span></li>
                   </ul>
                 </div>
-                <div class="scontent">
-                  <span class="stitle">RESULTS</span>
+                <div>
+                  <span>RESULTS</span>
                   <ol>
                     <li><span>Faster order processing (40%)</span></li>
                     <li><span>Higher system availability (99.5%)</span></li>
@@ -120,164 +292,229 @@
                   </ol>
                 </div>
               </div>
-          </div>
-          <div id="highlights" class="card">
-              <div id="vcontainerout">
-                <div id="vcontainerin">
-                  <div class="vhead" style="background-color: white;">
-                    <span class="vheader">highlights</span>
-                  </div>
-                  <div class="vsetsgroup">
-                    <div class="vsets">
-                      <div class="vicon1">
-                        <img src="./img/icon1.png" alt="icon1">
-                      </div>
-                      <div class="vbody">
-                        <span class="vtitle">opti-shore engagement</span>
-                        <p class="vsupertitle">Developing from off-shore while working with users at onsite at critical milestones</p>
-                      </div>
-                    </div>
-                    <div class="vsets">
-                      <div class="vicon1">
-                        <img src="./img/icon2.png" alt="icon1">
-                      </div>
-                      <div class="vbody">
-                        <span class="vtitle">INFRASTRUCTURE ELASTICITY</span>
-                        <p class="vsupertitle">Clustered architecture with self-healing capability and robust multi-site failover
-                          mechanisms</p>
-                      </div>
-                    </div>
-                    <div class="vsets">
-                      <div class="vicon1">
-                        <img src="./img/icon3.png" alt="icon1">
-                      </div>
-                      <div class="vbody">
-                        <span class="vtitle">MESSAGE & SERVICE ORIENTED ARCHITECTURE</span>
-                        <p class="vsupertitle">Parallel processing techniques to process a high volume of orders in a short span of
-                          time</p>
-                      </div>
-                    </div>
-                    <div class="vsets">
-                      <div class="vicon1">
-                        <img src="./img/icon4.png" alt="icon1">
-                      </div>
-                      <div class="vbody">
-                        <span class="vtitle">APP & SERVICES TEST AUTOMATION</span>
-                        <p class="vsupertitle">Custom and 3rd party tools to automate testing across channels - online, batch and web
-                          services</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div id="quotes">
-              <div id="wqhead">
-                <span class="wqheader">Customer Testimonial</span>
-                <div class="wqbody">
-                  <div class="blockquote">
-                    <p>
-                      We were a bit hesitant when Duvista proposed some emerging technologies and
-                      design patterns but were thrilled to see how they realized the architectural goals we set out </p>
-                  </div>
-                  <div class="wqfoot">
-                    <span class="wqfooter">CTO, Client Organization</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          <div id="wizzlets" class="card">
-            <div class="first">
-              <div id="wstats">
-                <div class="whead">
-                  <span class="wheader">Result Stat</span>
-                </div>
-                <div class="wbody">
-                  <div class="wavatar">42%
+          <div id="bottom-row" class="flex my-2">
+            <div id="highlights" class="w-3/4 bg-white p-4 mx-2">
+              <div>
+                <div id="vcontainerout">
+                  <div id="vcontainerin">
+                    <div>
+                      <span>HIGHLIGHTS</span>
+                    </div>
+                    <div class="grid gap-4 grid-cols-2 p-4">
+                      <div>
+                        <div>
+                          <img
+                            src="./img/icon1.png"
+                            alt="icon1  class="
+                            class="fill-current h-14 w-14 mr-16"
+                            width="54"
+                            height="54"
+                            viewBox="0 0 54 54"
+                          />
+                        </div>
+                        <div>
+                          <span>opti-shore engagement</span>
+                          <p>
+                            Developing from off-shore while working with users
+                            at onsite at critical milestones
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <img
+                            src="./img/icon2.png"
+                            alt="icon1"
+                            class="fill-current h-14 w-14 mr-16"
+                            width="54"
+                            height="54"
+                            viewBox="0 0 54 54"
+                          />
+                        </div>
+                        <div>
+                          <span>INFRASTRUCTURE ELASTICITY</span>
+                          <p>
+                            Clustered architecture with self-healing capability
+                            and robust multi-site failover mechanisms
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <img
+                            src="./img/icon3.png"
+                            alt="icon1"
+                            class="fill-current h-14 w-14 mr-16"
+                            width="54"
+                            height="54"
+                            viewBox="0 0 54 54"
+                          />
+                        </div>
+                        <div>
+                          <span>MESSAGE & SERVICE ORIENTED ARCHITECTURE</span>
+                          <p>
+                            Parallel processing techniques to process a high
+                            volume of orders in a short span of time
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <img
+                            src="./img/icon4.png"
+                            alt="icon1"
+                            class="fill-current h-14 w-14 mr-16"
+                            width="54"
+                            height="54"
+                            viewBox="0 0 54 54"
+                          />
+                        </div>
+                        <div>
+                          <span>APP & SERVICES TEST AUTOMATION</span>
+                          <p>
+                            Custom and 3rd party tools to automate testing
+                            across channels - online, batch and web services
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div style="margin-bottom: 8px;">
-                    <span class="wtitle">Reduction in order processing time</span>
-                    <p class="wsupertitle">Due to message based parallel processing and service-oriented architecture</p>
-                  </div>
                 </div>
-              </div>
-              <div id="wstats">
-                <div class="whead">
-                  <span class="wheader">Result Stat</span>
-                </div>
-                <div class="wbody">
-                  <div class="wavatar">92.5%
-                  </div>
-                  <div style="margin-bottom: 8px;">
-                    <span class="wtitle">System Unavailability</span>
-                    <p class="wsupertitle">Due to message based parallel processing and service-oriented architecture</p>
+                <div id="quotes" class="py-8">
+                  <div id="wqhead">
+                    <span>Customer Testimonial</span>
+                    <div>
+                      <div>
+                        <p>
+                          We were a bit hesitant when Duvista proposed some
+                          emerging technologies and design patterns but were
+                          thrilled to see how they realized the architectural
+                          goals we set out
+                        </p>
+                      </div>
+                      <div>
+                        <span>CTO, Client Organization</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="second">
-              <div id="wstats">
-                <div class="whead">
-                  <span class="wheader">Result Stat</span>
-                </div>
-                <div class="wbody">
-                  <div class="wavatar">52%
+            <div
+              id="wizzlets"
+              class="w-1/4 h-64 overflow-hidden overflow-scroll bg-white p-4"
+            >
+              <div>
+                <div id="wstats">
+                  <div>
+                    <span>Result Stat</span>
                   </div>
-                  <div style="margin-bottom: 8px;">
-                    <span class="wtitle">Reduction in order processing time</span>
-                    <p class="wsupertitle">Due to message based parallel processing and service-oriented architecture</p>
-                  </div>
-                </div>
-              </div>
-              <div id="wstats">
-                <div class="whead">
-                  <span class="wheader">Result Stat</span>
-                </div>
-                <div class="wbody">
-                  <div class="wavatar">82.5%
-                  </div>
-                  <div style="margin-bottom: 8px;">
-                    <span class="wtitle">System availability during all times including festive seasons and peak traffic
-                    </span>
-                    <p class="wsupertitle">Due to message based parallel processing and service-oriented architecture</p>
+                  <div>
+                    <div>42%</div>
+                    <div style="margin-bottom: 8px;">
+                      <span>Reduction in order processing time</span>
+                      <p>
+                        Due to message based parallel processing and
+                        service-oriented architecture
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="third">
-              <div id="wstats">
-                <div class="whead">
-                  <span class="wheader">Result Stat</span>
-                </div>
-                <div class="wbody">
-                  <div class="wavatar">66%
+                <div id="wstats">
+                  <div>
+                    <span>Result Stat</span>
                   </div>
-                  <div style="margin-bottom: 8px;">
-                    <span class="wtitle">Reduction in order processing time</span>
-                    <p class="wsupertitle">Due to message based parallel processing and service-oriented architecture</p>
+                  <div>
+                    <div>92.5%</div>
+                    <div style="margin-bottom: 8px;">
+                      <span>System Unavailability</span>
+                      <p>
+                        Due to message based parallel processing and
+                        service-oriented architecture
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div id="wstats">
-                <div class="whead">
-                  <span class="wheader">Result Stat</span>
-                </div>
-                <div class="wbody">
-                  <div class="wavatar">50%
+              <div>
+                <div id="wstats">
+                  <div>
+                    <span>Result Stat</span>
                   </div>
-                  <div style="margin-bottom: 8px;">
-                    <span class="wtitle">System availability</span>
-                    <p class="wsupertitle">Due to message based parallel processing and service-oriented architecture</p>
+                  <div>
+                    <div>52%</div>
+                    <div style="margin-bottom: 8px;">
+                      <span>Reduction in order processing time</span>
+                      <p>
+                        Due to message based parallel processing and
+                        service-oriented architecture
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="wstats">
+                  <div>
+                    <span>Result Stat</span>
+                  </div>
+                  <div>
+                    <div>82.5%</div>
+                    <div style="margin-bottom: 8px;">
+                      <span
+                        >System availability during all times including festive
+                        seasons and peak traffic
+                      </span>
+                      <p>
+                        Due to message based parallel processing and
+                        service-oriented architecture
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div id="wstats">
+                  <div>
+                    <span>Result Stat</span>
+                  </div>
+                  <div>
+                    <div>66%</div>
+                    <div style="margin-bottom: 8px;">
+                      <span>Reduction in order processing time</span>
+                      <p>
+                        Due to message based parallel processing and
+                        service-oriented architecture
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div id="wstats">
+                  <div>
+                    <span>Result Stat</span>
+                  </div>
+                  <div>
+                    <div>50%</div>
+                    <div style="margin-bottom: 8px;">
+                      <span>System availability</span>
+                      <p>
+                        Due to message based parallel processing and
+                        service-oriented architecture
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
+      <footer
+        id="footer"
+        class="flex items-center justify-between flex-wrap bg-white p-2"
+      >
+        <p>&copy; 2020 - Duvista Inc. All Rights reserved</p>
+      </footer>
     </div>
-    <footer id="footer" class="container">
-    <p>&copy; 2020 - Duvista Inc. All Rights reserved</p>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>
