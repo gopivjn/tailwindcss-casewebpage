@@ -555,7 +555,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /**
@@ -595,6 +595,95 @@ video {
   .container {
     max-width: 1440px;
   }
+}
+
+#snapshot {
+  height: 290px;
+}
+
+#wizzlets {
+  height: 480px;
+}
+
+ul li {
+  color: rgb(49, 112, 196);
+  font-size: 15px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  display: list-item;
+}
+
+ul li span {
+  color: rgb(90, 90, 90);
+  font-size: 15px;
+}
+
+ol li {
+  color: rgb(49, 112, 196);
+  font-size: 15px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  display: list-item;
+}
+
+ol li span {
+  color: rgb(90, 90, 90);
+  font-size: 15px;
+}
+
+p span {
+  color: rgb(49, 112, 196);
+  font-size: 150%;
+  vertical-align: middle;
+}
+
+.slist {
+  color: rgb(90, 90, 90);
+  font-size: 15px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+}
+
+.blockquote {
+  color: #5a5a5a;
+  position: relative;
+  font-size: 17px;
+  line-height: 27px;
+  font-style: italic;
+  padding: 0px;
+  margin: 0px;
+}
+
+.blockquote:before {
+  font-family: "Roboto";
+  content: " \201C ";
+  font-size: 46px;
+  font-weight: 400;
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  color: #5a5a5a;
 }
 
 .container {
@@ -6055,16 +6144,12 @@ video {
   clear: none;
 }
 
-.font-sans {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-display {
+  font-family: Roboto, sans-serif;
 }
 
-.font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+.font-body {
+  font-family: Roboto, sans-serif;
 }
 
 .font-hairline {
@@ -23315,16 +23400,12 @@ video {
     clear: none;
   }
 
-  .sm\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .sm\:font-display {
+    font-family: Roboto, sans-serif;
   }
 
-  .sm\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .sm\:font-body {
+    font-family: Roboto, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -40576,16 +40657,12 @@ video {
     clear: none;
   }
 
-  .md\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .md\:font-display {
+    font-family: Roboto, sans-serif;
   }
 
-  .md\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .md\:font-body {
+    font-family: Roboto, sans-serif;
   }
 
   .md\:font-hairline {
@@ -57837,16 +57914,12 @@ video {
     clear: none;
   }
 
-  .lg\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .lg\:font-display {
+    font-family: Roboto, sans-serif;
   }
 
-  .lg\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .lg\:font-body {
+    font-family: Roboto, sans-serif;
   }
 
   .lg\:font-hairline {
@@ -75098,16 +75171,12 @@ video {
     clear: none;
   }
 
-  .xl\:font-sans {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  .xl\:font-display {
+    font-family: Roboto, sans-serif;
   }
 
-  .xl\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  .xl\:font-body {
+    font-family: Roboto, sans-serif;
   }
 
   .xl\:font-hairline {

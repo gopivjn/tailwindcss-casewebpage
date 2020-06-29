@@ -6,6 +6,91 @@
   }
 }
 
+#snapshot {
+  height: 290px;
+}
+#wizzlets {
+  height: 480px;
+}
+
+ul li {
+  color: rgb(49, 112, 196);
+  font-size: 15px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  display: list-item;
+}
+
+ul li span {
+  color: rgb(90, 90, 90);
+  font-size: 15px;
+}
+ol li {
+  color: rgb(49, 112, 196);
+  font-size: 15px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  display: list-item;
+}
+
+ol li span {
+  color: rgb(90, 90, 90);
+  font-size: 15px;
+}
+p span {
+  color: rgb(49, 112, 196);
+  font-size: 150%;
+  vertical-align: middle;
+}
+
+.slist {
+  color: rgb(90, 90, 90);
+  font-size: 15px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+}
+
+.blockquote {
+  color: #5a5a5a;
+  position: relative;
+  font-size: 17px;
+  line-height: 27px;
+  font-style: italic;
+  padding: 0px;
+  margin: 0px;
+}
+.blockquote:before {
+  font-family: "Roboto";
+  content: " \201C ";
+  font-size: 46px;
+  font-weight: 400;
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  color: #5a5a5a;
+}
+
 @tailwind components;
 
 @tailwind utilities;

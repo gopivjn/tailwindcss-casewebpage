@@ -8,137 +8,140 @@
       rel="stylesheet"
     />
     <title>tailwindcss-CaseWebpage</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./public/style.css" />
   </head>
   <body>
-    <div class="container mx-auto bg-gray-200">
+    <div class="container mx-auto bg-gray-200 text-gray-700 dark:text-gray-200">
       <!-- Nav Bar -->
-      <nav class="bg-white sticky top-0 my-3">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div class="relative flex items-center justify-between h-16">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <!-- Mobile menu button-->
-              <button
-                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
-                aria-label="Main menu"
-                aria-expanded="false"
+      <nav id="main-nav" class="sticky top-0">
+        <div class="bg-white my-3 shadow-md rounded">
+          <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+              <div
+                class="absolute inset-y-0 left-0 flex items-center sm:hidden"
               >
-                <!-- Icon when menu is closed. -->
-                <svg
-                  class="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                <!-- Mobile menu button-->
+                <button
+                  class="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                  aria-label="Main menu"
+                  aria-expanded="false"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-                <!-- Icon when menu is open. -->
-                <svg
-                  class="hidden h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div class="flex items-center">
-              <div class="hidden sm:block sm:ml-6">
-                <div>
-                  <span
-                    class="ml-1 px-3 py-2 rounded-md text-xl font-medium leading-5 text-gray-500 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  <!-- Icon when menu is closed. -->
+                  <svg
+                    class="block h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    Duvista Case Study
-                  </span>
-                  <a
-                    href="#"
-                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                    >OVERVIEW
-                  </a>
-                  <a
-                    href="#"
-                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                    >HIGHLIGHTS
-                  </a>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                  <!-- Icon when menu is open. -->
+                  <svg
+                    class="hidden h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="flex items-center">
+                <div class="hidden sm:block sm:ml-6">
+                  <div>
+                    <span
+                      class="ml-1 px-3 py-2 rounded-md text-xl font-medium leading-5 text-gray-500 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >
+                      Duvista Case Study
+                    </span>
+                    <a
+                      href="#main-container"
+                      class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                      >OVERVIEW
+                    </a>
+                    <a
+                      href="#highlights"
+                      class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-blue-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                      >HIGHLIGHTS
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-            >
-              <button
-                class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-                aria-label="Notifications"
+              <div
+                class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
               >
-                <svg
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                <button
+                  class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                  aria-label="Notifications"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-              </button>
-              <div class="flex-shrink-0">
-                <img
-                  class="hidden lg:block h-14 w-auto"
-                  src="./img/logo.png"
-                  alt="Workflow logo"
-                />
-              </div>
-
-              <!-- Profile dropdown -->
-              <div class="ml-3 relative">
-                <div>
-                  <button
-                    class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out"
-                    id="user-menu"
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    <img
-                      class="h-8 w-8 rounded-full"
-                      src="img/user.png"
-                      alt=""
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                     />
-                  </button>
+                  </svg>
+                </button>
+                <div class="flex-shrink-0">
+                  <img
+                    class="hidden lg:block h-14 w-auto"
+                    src="./public/img/logo.png"
+                    alt="Workflow logo"
+                  />
+                </div>
+
+                <!-- Profile dropdown -->
+                <div class="ml-3 relative">
+                  <div>
+                    <button
+                      class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-white transition duration-150 ease-in-out"
+                      id="user-menu"
+                    >
+                      <img
+                        class="h-8 w-8 rounded-full"
+                        src="./public/img/user.png"
+                        alt=""
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!--
+          <!--
     Mobile menu, toggle classes based on menu state.
 
     Menu open: "block", Menu closed: "hidden"
   -->
-        <div class="hidden sm:hidden">
-          <div class="px-2 pt-2 pb-3">
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-              >OVERVIEW
-            </a>
-            <a
-              href="#"
-              class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-              >HIGHLIGHTS
-            </a>
+          <div class="hidden sm:hidden">
+            <div class="px-2 pt-2 pb-3">
+              <a
+                href="#"
+                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                >OVERVIEW
+              </a>
+              <a
+                href="#"
+                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                >HIGHLIGHTS
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -148,15 +151,21 @@
         <div id="side-bar" class="w-1/4">
           <div
             id="casecard"
-            class="bg-blue-700 bg-opacity-25 border rounded flex p-2"
+            class="bg-blue-700 bg-opacity-25 border rounded flex p-4"
           >
             <div>
-              <p id="supertitle">Case Main</p>
-              <p id="title">eCommerce Platform Re-engineering Solutions.</p>
-              <p id="subjects">CLT - Gift Certificates</p>
+              <p id="supertitle" class="uppercase text-xs text-blue-500 mt-1">
+                Case Main
+              </p>
+              <p id="title" class="font-medium text-sm mt-1">
+                eCommerce Platform Re-engineering Solutions.
+              </p>
+              <p id="subjects" class="text-xs text-gray-600 mt-2">
+                CLT - Gift Certificates
+              </p>
             </div>
             <img
-              src="./img/thumb_banner.jpg"
+              src="./public/img/thumb_banner.jpg"
               alt=""
               class="fill-current h-16 w-16 mr-2 mt-2"
               width="54"
@@ -169,19 +178,24 @@
           <div id="top-row" class="flex">
             <div id="overview" class="w-3/4 bg-white mx-2">
               <div class="p-4">
-                <p id="supertitle-m">Speciality Online Retailer</p>
-                <p id="title-m">
+                <p
+                  id="supertitle-m"
+                  class="uppercase text-base text-blue-500 mt-1 mb-2"
+                >
+                  Speciality Online Retailer
+                </p>
+                <p id="title-m" class="text-3xl leading-tight mb-2">
                   Overhaul of technology systems & processes transforms the
                   business of an online gifting brand.
                 </p>
-                <p id="subjects-m">
+                <p id="subjects-m" class="text-gray-500 text-sm">
                   Retail, eCommerce, Order Processing, MoM and SoA
                 </p>
               </div>
               <div>
-                <img src="./img/banner.jpg" alt="" />
+                <img src="./public/img/banner.jpg" alt="" />
               </div>
-              <div class="p-4">
+              <div class="p-4 leading-loose text-lg">
                 <p>
                   Order fulfilment on time is crucial for our client, who is
                   into online gifting solutions characterized by seasonal demand
@@ -200,15 +214,17 @@
             </div>
             <div
               id="snapshot"
-              class="w-1/4 h-64 overflow-hidden overflow-scroll bg-white p-4"
+              class="w-1/4 overflow-hidden overflow-scroll bg-white p-4"
             >
-              <div>
+              <div class="uppercase text-sm text-blue-500 mt-1 mb-2">
                 <span>SNAPSHOT</span>
               </div>
               <div>
-                <div>
-                  <span> ABOUT THE CLIENT </span>
-                  <p>
+                <div class="mb-3">
+                  <span class="uppercase text-sm mt-1 mb-2">
+                    ABOUT THE CLIENT
+                  </span>
+                  <p class="text-sm mt-2 mb-2">
                     e-Commerce provider of innovative reward solutions and gift
                     products
                   </p>
@@ -237,7 +253,7 @@
                 </div>
                 <div>
                   <span> SERVICES</span>
-                  <p>
+                  <p class="slist">
                     Technology consulting<span> • </span>Application
                     Re-engineering<span> • </span>New architecture & features
                     implementation <span> • </span>Database migration &
@@ -299,14 +315,14 @@
               <div>
                 <div id="vcontainerout">
                   <div id="vcontainerin">
-                    <div>
+                    <div class="uppercase text-sm text-green-500 mt-1 mb-2">
                       <span>HIGHLIGHTS</span>
                     </div>
-                    <div class="grid gap-4 grid-cols-2 p-4">
+                    <div class="grid gap-6 grid-cols-2 p-1 mx-2 my-2">
                       <div>
                         <div>
                           <img
-                            src="./img/icon1.png"
+                            src="./public/img/icon1.png"
                             alt="icon1  class="
                             class="fill-current h-14 w-14 mr-16"
                             width="54"
@@ -314,9 +330,11 @@
                             viewBox="0 0 54 54"
                           />
                         </div>
-                        <div>
-                          <span>opti-shore engagement</span>
-                          <p>
+                        <div class="py-1">
+                          <span class="uppercase text-sm"
+                            >opti-shore engagement</span
+                          >
+                          <p class="text-sm py-1">
                             Developing from off-shore while working with users
                             at onsite at critical milestones
                           </p>
@@ -325,7 +343,7 @@
                       <div>
                         <div>
                           <img
-                            src="./img/icon2.png"
+                            src="./public/img/icon2.png"
                             alt="icon1"
                             class="fill-current h-14 w-14 mr-16"
                             width="54"
@@ -333,9 +351,11 @@
                             viewBox="0 0 54 54"
                           />
                         </div>
-                        <div>
-                          <span>INFRASTRUCTURE ELASTICITY</span>
-                          <p>
+                        <div class="py-1">
+                          <span class="uppercase text-sm"
+                            >INFRASTRUCTURE ELASTICITY</span
+                          >
+                          <p class="text-sm py-1">
                             Clustered architecture with self-healing capability
                             and robust multi-site failover mechanisms
                           </p>
@@ -344,7 +364,7 @@
                       <div>
                         <div>
                           <img
-                            src="./img/icon3.png"
+                            src="./public/img/icon3.png"
                             alt="icon1"
                             class="fill-current h-14 w-14 mr-16"
                             width="54"
@@ -352,9 +372,11 @@
                             viewBox="0 0 54 54"
                           />
                         </div>
-                        <div>
-                          <span>MESSAGE & SERVICE ORIENTED ARCHITECTURE</span>
-                          <p>
+                        <div class="py-1">
+                          <span class="uppercase text-sm"
+                            >MESSAGE & SERVICE ORIENTED ARCHITECTURE</span
+                          >
+                          <p class="text-sm py-1">
                             Parallel processing techniques to process a high
                             volume of orders in a short span of time
                           </p>
@@ -363,7 +385,7 @@
                       <div>
                         <div>
                           <img
-                            src="./img/icon4.png"
+                            src="./public/img/icon4.png"
                             alt="icon1"
                             class="fill-current h-14 w-14 mr-16"
                             width="54"
@@ -371,9 +393,11 @@
                             viewBox="0 0 54 54"
                           />
                         </div>
-                        <div>
-                          <span>APP & SERVICES TEST AUTOMATION</span>
-                          <p>
+                        <div class="py-1">
+                          <span class="uppercase text-sm"
+                            >APP & SERVICES TEST AUTOMATION</span
+                          >
+                          <p class="text-sm py-1">
                             Custom and 3rd party tools to automate testing
                             across channels - online, batch and web services
                           </p>
@@ -384,9 +408,11 @@
                 </div>
                 <div id="quotes" class="py-8">
                   <div id="wqhead">
-                    <span>Customer Testimonial</span>
-                    <div>
-                      <div>
+                    <span class="uppercase text-sm text-green-500 mt-1 mb-2"
+                      >Customer Testimonial</span
+                    >
+                    <div class="px-4 py-4">
+                      <div class="italic mt-2 blockquote">
                         <p>
                           We were a bit hesitant when Duvista proposed some
                           emerging technologies and design patterns but were
@@ -394,7 +420,7 @@
                           goals we set out
                         </p>
                       </div>
-                      <div>
+                      <div class="text-sm text-gray-600 mt-2 mb-1">
                         <span>CTO, Client Organization</span>
                       </div>
                     </div>
@@ -404,18 +430,22 @@
             </div>
             <div
               id="wizzlets"
-              class="w-1/4 h-64 overflow-hidden overflow-scroll bg-white p-4"
+              class="w-1/4 overflow-hidden overflow-scroll bg-white p-4"
             >
-              <div>
+              <div class="py-2">
                 <div id="wstats">
-                  <div>
+                  <div class="uppercase text-sm text-green-500 mt-1 mb-2">
                     <span>Result Stat</span>
                   </div>
                   <div>
-                    <div>42%</div>
+                    <div class="text-5xl text-gray-500 mt-1">
+                      42%
+                    </div>
                     <div style="margin-bottom: 8px;">
-                      <span>Reduction in order processing time</span>
-                      <p>
+                      <span class="uppercase text-sm font-medium"
+                        >Reduction in order processing time</span
+                      >
+                      <p class="text-sm py-1">
                         Due to message based parallel processing and
                         service-oriented architecture
                       </p>
@@ -423,14 +453,16 @@
                   </div>
                 </div>
                 <div id="wstats">
-                  <div>
+                  <div class="uppercase text-sm text-green-500 mt-1 mb-2">
                     <span>Result Stat</span>
                   </div>
                   <div>
-                    <div>92.5%</div>
+                    <div class="text-5xl text-gray-500 mt-1">92.5%</div>
                     <div style="margin-bottom: 8px;">
-                      <span>System Unavailability</span>
-                      <p>
+                      <span class="uppercase text-sm font-medium"
+                        >System Unavailability</span
+                      >
+                      <p class="text-sm py-1">
                         Due to message based parallel processing and
                         service-oriented architecture
                       </p>
@@ -438,16 +470,18 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="py-4">
                 <div id="wstats">
-                  <div>
+                  <div class="uppercase text-sm text-green-500 mt-3 mb-4">
                     <span>Result Stat</span>
                   </div>
                   <div>
-                    <div>52%</div>
+                    <div class="text-5xl text-gray-500 mt-1">52%</div>
                     <div style="margin-bottom: 8px;">
-                      <span>Reduction in order processing time</span>
-                      <p>
+                      <span class="uppercase text-sm font-medium"
+                        >Reduction in order processing time</span
+                      >
+                      <p class="text-sm py-1">
                         Due to message based parallel processing and
                         service-oriented architecture
                       </p>
@@ -455,17 +489,17 @@
                   </div>
                 </div>
                 <div id="wstats">
-                  <div>
+                  <div class="uppercase text-sm text-green-500 mt-1 mb-2">
                     <span>Result Stat</span>
                   </div>
                   <div>
-                    <div>82.5%</div>
+                    <div class="text-5xl text-gray-500 mt-1">82.5%</div>
                     <div style="margin-bottom: 8px;">
-                      <span
+                      <span class="uppercase text-sm font-medium"
                         >System availability during all times including festive
                         seasons and peak traffic
                       </span>
-                      <p>
+                      <p class="text-sm py-1">
                         Due to message based parallel processing and
                         service-oriented architecture
                       </p>
@@ -473,16 +507,18 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="py-4">
                 <div id="wstats">
-                  <div>
+                  <div class="uppercase text-sm text-green-500 mt-3 mb-2">
                     <span>Result Stat</span>
                   </div>
                   <div>
-                    <div>66%</div>
+                    <div class="text-5xl text-gray-500 mt-1">66%</div>
                     <div style="margin-bottom: 8px;">
-                      <span>Reduction in order processing time</span>
-                      <p>
+                      <span class="uppercase text-sm font-medium"
+                        >Reduction in order processing time</span
+                      >
+                      <p class="text-sm py-1">
                         Due to message based parallel processing and
                         service-oriented architecture
                       </p>
@@ -490,14 +526,16 @@
                   </div>
                 </div>
                 <div id="wstats">
-                  <div>
+                  <div class="uppercase text-sm text-green-500 mt-1 mb-2">
                     <span>Result Stat</span>
                   </div>
                   <div>
-                    <div>50%</div>
+                    <div class="text-5xl text-gray-500 mt-1">50%</div>
                     <div style="margin-bottom: 8px;">
-                      <span>System availability</span>
-                      <p>
+                      <span class="uppercase text-sm font-medium"
+                        >System availability</span
+                      >
+                      <p class="text-sm py-1">
                         Due to message based parallel processing and
                         service-oriented architecture
                       </p>
@@ -515,6 +553,29 @@
       >
         <p>&copy; 2020 - Duvista Inc. All Rights reserved</p>
       </footer>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        // Smooth Scrolling
+
+        $("#main-nav a, .btn").on("click", function (e) {
+          if (this.hash !== "") {
+            e.preventDefault();
+
+            const hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 70,
+              },
+              800
+            );
+          }
+        });
+      </script>
     </div>
   </body>
 </html>
